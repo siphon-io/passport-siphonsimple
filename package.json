@@ -1,0 +1,25 @@
+{
+  "name": "passport-siphonsimple",
+  "version": "0.0.0",
+  "description": "Siphon.IO Simple SSO strategy for Passport",
+  "author": "Siphon.IO <opensource@siphon.io> (http://www.siphon.io/)",
+  "maintainers": [
+    "Conrad Pankoff <deoxxa@fknsrs.biz> (http://www.fknsrs.biz/)"
+  ],
+  "homepage": "https://github.com/siphon-io/passport-siphonsimple",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/siphon-io/passport-siphonsimple.git"
+  },
+  "keywords": [
+    "passport",
+    "siphon",
+    "siphon.io",
+    "authentication"
+  ],
+  "license": "BSD",
+  "main": "passport-siphonsimple.js",
+  "dependencies": {
+    "passport": "~0.1.12"
+  }
+}
