@@ -52,6 +52,10 @@ SiphonSimpleStrategy.prototype.authenticate = function(req, options) {
       return this.error(Error("signature is incorrect"));
     }
 
+    req.authentication = {
+      state: response.state,
+    };
+
     if (response.user) {
       return this.success(response.user);
     } else {
@@ -63,6 +67,7 @@ SiphonSimpleStrategy.prototype.authenticate = function(req, options) {
 
   var request = Buffer(JSON.stringify({
     token: req.session.token,
+    state: req.authentication.state,
     valid_from: new Date().toISOString(),
     valid_to: new Date(new Date().valueOf() + this.request_ttl).toISOString(),
     redirect_to: this.consumer_url,
