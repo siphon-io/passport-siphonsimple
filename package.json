@@ -1,6 +1,6 @@
 {
   "name": "passport-siphonsimple",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Siphon.IO Simple SSO strategy for Passport",
   "author": "Siphon.IO <opensource@siphon.io> (http://www.siphon.io/)",
   "maintainers": [
